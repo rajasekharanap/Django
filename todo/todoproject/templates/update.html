@@ -1,0 +1,8 @@
+{% extends 'basetemplate.html' %}
+{% block contents %}
+<form method="post">
+  {% csrf_token %}
+  {{tskup.as_p}}
+  <button style="color:orange;" type="submit">Update</button>
+</form>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% block contents %}
+  <div class="card">
+    <div class="card-header">
+      <div class="title">Task Update</div>
+        <div class="card-body">
+        <form method="post">
+          {% csrf_token %}
+          {{form.as_p}}
+          <button style="color:orange;" type="submit">Update</button>
+        </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

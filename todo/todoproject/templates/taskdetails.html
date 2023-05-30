@@ -1,0 +1,12 @@
+{% extends 'basetemplate.html' %}
+{% block contents %}
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{detview.name}}</h5>
+                    <p><b>{{detview.priority}}</b></p>
+                    <p><b>{{detview.date}}</b></p>
+                    <a class="btn btn-danger" href="{% url 'delete' detview.id %}">Done</a>
+                    <a class="btn btn-warning" href="{% url 'update' detview.id %}">Update</a>
+                </div>
+            </div>
+{% endblock %}
