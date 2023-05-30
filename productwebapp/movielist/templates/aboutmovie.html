@@ -1,0 +1,21 @@
+{% extends 'common.html' %}
+
+{% block body %}
+{{about.name}}<br><br>
+{{about.desc}}<br><br>
+{{about.year}}<br><br>
+<img src="{{about.img.url}}" height="300" width="300"><br><br><br>
+<a class="btn btn-warning" href="{% url 'movieapp:update' about.id %}">Update</a>
+<a class="btn btn-danger" href="{% url 'movieapp:delete' about.id %}">Delete</a>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
